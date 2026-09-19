@@ -1,0 +1,31 @@
+{
+  "name": "filter-funds-content",
+  "version": "1.0.0",
+  "description": "Automated daily motivational content pipeline for Filter Funds: generates a quote post with Claude, renders a branded short video, and publishes it to YouTube Shorts and Instagram Reels.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "generate": "node scripts/generate-content.js",
+    "render": "node scripts/render-design.js",
+    "build-video": "node scripts/build-video.js",
+    "publish:youtube": "node scripts/publish-youtube.js",
+    "publish:instagram": "node scripts/publish-instagram.js",
+    "run-daily": "node scripts/run-daily.js",
+    "youtube:auth": "node scripts/get-youtube-refresh-token.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filter-funds",
+    "content-automation",
+    "youtube-shorts",
+    "instagram-reels"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.5",
+    "googleapis": "^144.0.0",
+    "playwright": "^1.48.0"
+  }
+}

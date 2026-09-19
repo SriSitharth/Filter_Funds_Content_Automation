@@ -1,0 +1,28 @@
+{
+    "brand": "Filter Funds",
+    "website": "https://filterfunds.com",
+    "instagram": "@filterfunds",
+    "youtube": "@FilterFunds",
+    "style": {
+      "colors": ["black", "white", "gray"],
+      "visualStyle": "minimal, premium, modern finance",
+      "avoidColors": ["teal"]
+    },
+    "content": {
+      "categories": [
+        "motivation",
+        "investing mindset",
+        "financial discipline",
+        "long term investing",
+        "wealth building",
+        "SIP mindset"
+      ],
+      "avoid": [
+        "guaranteed returns",
+        "get rich quick claims",
+        "unrealistic investment promises",
+        "political content",
+        "unverified statistics"
+      ]
+    }
+  }

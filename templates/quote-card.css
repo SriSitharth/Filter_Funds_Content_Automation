@@ -1,0 +1,139 @@
+/* Filter Funds quote card - premium minimal finance aesthetic
+   Colors: black / white / gray only. No teal. */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 1080px;
+  height: 1920px;
+  overflow: hidden;
+  background: #000000;
+  font-family: -apple-system, "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.stage {
+  position: relative;
+  width: 1080px;
+  height: 1920px;
+  background: #000000;
+  overflow: hidden;
+}
+
+/* Slow continuous zoom for gentle motion throughout the clip */
+.bg-zoom {
+  position: absolute;
+  inset: -40px;
+  background: radial-gradient(circle at 50% 30%, #1a1a1a 0%, #000000 65%);
+  animation: slowZoom 15s ease-in-out infinite alternate;
+}
+
+@keyframes slowZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.06);
+  }
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 260px 60px rgba(0, 0, 0, 0.85);
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 96px;
+  text-align: center;
+}
+
+.mark {
+  color: #9a9a9a;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 0.9s ease-out 0.15s forwards;
+}
+
+.divider {
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  margin: 40px 0 56px;
+  animation: growLine 0.8s ease-out 0.5s forwards;
+}
+
+@keyframes growLine {
+  to {
+    width: 140px;
+  }
+}
+
+.quote {
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 76px;
+  line-height: 1.35;
+  max-width: 880px;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fadeUp 1s ease-out 0.85s forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: #7a7a7a;
+  font-size: 26px;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeIn 0.9s ease-out 1.6s forwards;
+}
+
+.footer .dot {
+  color: #4a4a4a;
+}
+
+.footer .handle {
+  color: #cfcfcf;
+  font-weight: 600;
+}
