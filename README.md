@@ -37,8 +37,8 @@ with those stored as secrets. Do these once, locally.
 ### 0. Prerequisites
 
 - Node.js 20+
-- [ffmpeg](https://ffmpeg.org/download.html) on your PATH (for local
-  testing — GitHub Actions' `ubuntu-latest` runner already has it)
+- [ffmpeg](https://ffmpeg.org/download.html) on your PATH for local testing
+  (the GitHub Actions workflow installs it itself via `apt-get`)
 - `git`, and the [GitHub CLI](https://cli.github.com/) (`gh`) if you want to
   create the repo from the terminal
 
@@ -204,5 +204,6 @@ npm run run-daily           # the whole pipeline, same as the scheduled job
 - **YouTube upload fails with quota errors:** check
   [Google Cloud Console quotas](https://console.cloud.google.com/apis/api/youtube.googleapis.com/quotas)
   — one upload a day should never come close to the default limit.
-- **ffmpeg not found:** install it and ensure it's on PATH; GitHub Actions'
-  `ubuntu-latest` already has it preinstalled.
+- **ffmpeg not found:** for local runs, install it and ensure it's on PATH;
+  the GitHub Actions workflow installs it itself via `apt-get`, so this
+  shouldn't happen in CI.
