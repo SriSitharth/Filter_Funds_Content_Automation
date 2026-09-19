@@ -97,7 +97,7 @@ Return ONLY valid JSON matching the exact schema described in your instructions.
 
   const response = await anthropic.messages.create({
     model: MODEL,
-    max_tokens: 1500,
+    max_tokens: 2048,
     temperature: 0.9,
     system: systemPrompt,
     messages: [{ role: 'user', content: userMessage }],
@@ -129,13 +129,21 @@ async function generate() {
   let content;
   let lastQuote;
   for (let attempt = 1; attempt <= MAX_GENERATION_ATTEMPTS; attempt += 1) {
-    content = await generateContent({
-      anthropic,
-      systemPrompt,
-      recentQuotes,
-      avoidQuote: lastQuote,
-    });
-    validateContent(content);
+    try {
+      content = await generateContent({
+        anthropic,
+        systemPrompt,
+        recentQuotes,
+        avoidQuote: lastQuote,
+      });
+      validateContent(content);
+    } catch (err) {
+      if (attempt === MAX_GENERATION_ATTEMPTS) {
+        throw err;
+      }
+      console.warn(`Attempt ${attempt}: ${err.message}, retrying...`);
+      continue;
+    }
 
     if (!isDuplicateQuote(content.quote, history)) {
       break;

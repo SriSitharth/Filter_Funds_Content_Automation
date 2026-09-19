@@ -39,6 +39,13 @@ async function runPublishStep(name, modulePath) {
   }
 }
 
+// Instagram publishing is optional — GITHUB_TOKEN/GITHUB_REPOSITORY are
+// always present in Actions regardless of setup, so the real signal is
+// whether the user has actually added their Instagram credentials.
+function isInstagramConfigured() {
+  return Boolean(process.env.IG_ACCESS_TOKEN && process.env.IG_USER_ID);
+}
+
 async function main() {
   const generateContent = require('./generate-content');
 
@@ -61,7 +68,14 @@ async function main() {
 
   const publishResults = [];
   publishResults.push(await runPublishStep('publish-youtube', './publish-youtube'));
-  publishResults.push(await runPublishStep('publish-instagram', './publish-instagram'));
+
+  if (isInstagramConfigured()) {
+    publishResults.push(await runPublishStep('publish-instagram', './publish-instagram'));
+  } else {
+    console.log('\n=== publish-instagram ===');
+    console.log('Skipping: IG_ACCESS_TOKEN / IG_USER_ID not set.');
+    publishResults.push({ name: 'publish-instagram', ok: true, result: 'skipped (not configured)' });
+  }
 
   console.log('\n=== Summary ===');
   let hasFailure = false;
