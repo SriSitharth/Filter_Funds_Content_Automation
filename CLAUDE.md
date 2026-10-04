@@ -8,7 +8,7 @@ Brand:
 Filter Funds
 
 Website:
-https://filterfunds.com
+www.filterfunds.com
 
 Instagram:
 @filterfunds
@@ -103,3 +103,5 @@ Notes on fields:
   from the "hashtags" field are appended automatically. Including them in
   both places causes YouTube to exceed its hashtag limit and strip all of
   them from the video.
+- Always include www.filterfunds.com in both "youtubeDescription" and
+  "instagramCaption" (the publish scripts also append it if missing).

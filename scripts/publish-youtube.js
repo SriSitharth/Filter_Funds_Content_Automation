@@ -18,6 +18,7 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const { google } = require('googleapis');
+const { ensureWebsiteLine } = require('./lib/brand-links');
 
 const ROOT = path.join(__dirname, '..');
 const CONTENT_PATH = path.join(ROOT, 'output', 'current-content.json');
@@ -61,7 +62,7 @@ function extractHashtags(text) {
 }
 
 function buildDescription(content) {
-  const description = content.youtubeDescription || '';
+  const description = ensureWebsiteLine(content.youtubeDescription || '');
   const usedTags = new Set(extractHashtags(description));
 
   const extraTags = [];

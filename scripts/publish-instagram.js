@@ -25,6 +25,7 @@ require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const { publishAssetsToGithubRelease } = require('./lib/github-assets');
+const { ensureWebsiteLine } = require('./lib/brand-links');
 
 const ROOT = path.join(__dirname, '..');
 const CONTENT_PATH = path.join(ROOT, 'output', 'current-content.json');
@@ -53,8 +54,9 @@ function readJson(filePath) {
 }
 
 function buildCaption(content) {
+  const captionBody = ensureWebsiteLine(content.instagramCaption || content.quote || '');
   const hashtagLine = (content.hashtags || []).join(' ');
-  return [content.instagramCaption || content.quote, '', hashtagLine]
+  return [captionBody, '', hashtagLine]
     .filter((part) => part !== undefined && part !== null)
     .join('\n');
 }

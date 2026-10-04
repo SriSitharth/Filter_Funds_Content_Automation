@@ -14,6 +14,7 @@ const os = require('os');
 const path = require('path');
 const { google } = require('googleapis');
 const { readPending } = require('./lib/pending-followup');
+const { ensureWebsiteLine } = require('./lib/brand-links');
 
 const ROOT = path.join(__dirname, '..');
 const TITLE_MAX_LENGTH = 100;
@@ -43,9 +44,11 @@ function extractHashtags(text) {
 }
 
 function buildDescription(content) {
-  let description = (content.youtubeDescription || content.quote || '')
-    .replace(/\s*#shorts\b/gi, '')
-    .trim();
+  let description = ensureWebsiteLine(
+    (content.youtubeDescription || content.quote || '')
+      .replace(/\s*#shorts\b/gi, '')
+      .trim()
+  );
 
   const usedTags = new Set(extractHashtags(description));
   const extraTags = [];
