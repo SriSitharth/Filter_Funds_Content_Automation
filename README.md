@@ -7,10 +7,11 @@ publishes it as a **YouTube Short** and an **Instagram Reel** every day at
 
 ## Pipeline
 
-1. `scripts/generate-content.js` — Claude (Anthropic API) generates the quote,
-   YouTube title/description, Instagram caption, and hashtags, following the
-   rules in [`CLAUDE.md`](CLAUDE.md) and avoiding repeats from
-   [`content/history.json`](content/history.json).
+1. `scripts/generate-content.js` — OpenAI generates the quote, YouTube
+   title/description, Instagram caption, and hashtags, following the rules in
+   [`CLAUDE.md`](CLAUDE.md) and avoiding repeats from
+   [`content/history.json`](content/history.json). If OpenAI is missing or
+   fails, it falls back to Anthropic (Claude) automatically.
 2. `scripts/render-design.js` — Playwright renders
    [`templates/quote-card.html`](templates/quote-card.html) (a minimal
    black/white/gray animated quote card) and records it as a video.
@@ -21,18 +22,22 @@ publishes it as a **YouTube Short** and an **Instagram Reel** every day at
 5. `scripts/publish-instagram.js` — hosts the video as a public GitHub
    Release asset, then publishes it as an Instagram Reel via the Graph API.
 6. `scripts/run-daily.js` — runs all of the above in order; a failure in one
-   publish step does not block the other.
+   publish step does not block the other. Also writes
+   `content/pending-followup.json` for the evening job.
+7. **+12 hours later:** `scripts/run-followup.js` posts the **same quote** as
+   an Instagram Story (cover image) and a regular YouTube video (not a Short).
 
-The whole thing is wired up in
-[`.github/workflows/daily-post.yml`](.github/workflows/daily-post.yml),
-scheduled at `30 3 * * *` UTC (9:00 AM IST). GitHub Actions cron is
-best-effort and can slip by a few minutes.
+Morning workflow: [`.github/workflows/daily-post.yml`](.github/workflows/daily-post.yml)
+at `30 3 * * *` UTC (9:00 AM IST).  
+Follow-up workflow: [`.github/workflows/followup-post.yml`](.github/workflows/followup-post.yml)
+at `30 15 * * *` UTC (9:00 PM IST). GitHub Actions cron is best-effort.
 
 ## One-time setup
 
-You need four things before the automation can run: an Anthropic API key, a
-YouTube OAuth refresh token, an Instagram access token, and a GitHub repo
-with those stored as secrets. Do these once, locally.
+You need four things before the automation can run: an AI API key (OpenAI
+preferred, Anthropic as fallback), a YouTube OAuth refresh token, an Instagram
+access token, and a GitHub repo with those stored as secrets. Do these once,
+locally.
 
 ### 0. Prerequisites
 
@@ -48,10 +53,15 @@ npx playwright install chromium
 cp .env.example .env
 ```
 
-### 1. Anthropic API key
+### 1. AI API keys (OpenAI + Anthropic fallback)
 
-Create a key at [console.anthropic.com](https://console.anthropic.com/) and
-put it in `.env` as `ANTHROPIC_API_KEY`. Test content generation locally:
+1. Preferred: create a key at [platform.openai.com](https://platform.openai.com/api-keys)
+   and put it in `.env` as `OPENAI_API_KEY`.
+2. Fallback: create a key at [console.anthropic.com](https://console.anthropic.com/)
+   and put it in `.env` as `ANTHROPIC_API_KEY`. Used automatically when OpenAI
+   is missing or the OpenAI call fails.
+
+Test content generation locally:
 
 ```bash
 npm run generate
@@ -144,16 +154,21 @@ Actions → New repository secret):
 
 | Secret | Value |
 | --- | --- |
-| `ANTHROPIC_API_KEY` | from step 1 |
-| `CLAUDE_MODEL` | optional, only if you want to override the default model |
+| `OPENAI_API_KEY` | from step 1 (preferred) |
+| `ANTHROPIC_API_KEY` | from step 1 (fallback) |
+| `OPENAI_MODEL` | optional OpenAI model override (default `gpt-6-luna`) |
+| `CLAUDE_MODEL` | optional Claude model override |
 | `YOUTUBE_CLIENT_ID` | from step 2 |
 | `YOUTUBE_CLIENT_SECRET` | from step 2 |
 | `YOUTUBE_REFRESH_TOKEN` | from step 2 |
 | `IG_ACCESS_TOKEN` | from step 3 |
 | `IG_USER_ID` | from step 3 |
 
-`GITHUB_TOKEN` and `GITHUB_REPOSITORY` are provided automatically by
-Actions — you don't need to add those as secrets.
+Do **not** create secrets named `GITHUB_TOKEN` or `GITHUB_REPOSITORY` —
+GitHub rejects custom secret names starting with `GITHUB_`. The workflow
+already injects the built-in Actions token (`github.token`) and
+`github.repository` automatically. Those two values are only needed in
+local `.env` for testing `npm run publish:instagram`.
 
 ### 5. Test the whole pipeline
 
@@ -188,8 +203,10 @@ npm run run-daily           # the whole pipeline, same as the scheduled job
   gray, no teal).
 - **Video length:** set `QUOTE_VIDEO_DURATION_SECONDS` (default 15, capped at
   60).
-- **Background music:** drop a royalty-free track in `assets/audio/` — see
-  that folder's `README.md` for free sources. No track = silent video.
+- **Background music:** drop royalty-free tracks in `assets/audio/` — the build
+  rotates through them by date. `ambient-bed.mp3` is only a fallback if nothing
+  else is there. CI fails if audio is missing (set `ALLOW_SILENT_VIDEO=true`
+  only if you intentionally want silence).
 - **Posting time:** edit the `cron` line in
   `.github/workflows/daily-post.yml` (values are in UTC).
 - **YouTube visibility:** set `YOUTUBE_PRIVACY_STATUS` secret to `public`,

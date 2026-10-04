@@ -11,6 +11,7 @@
  *
  * Optional env vars:
  *   QUOTE_VIDEO_DURATION_SECONDS (default: 15)
+ *   QUOTE_TEMPLATE — "dark" | "light" | "alternate" (default: alternate by date)
  */
 
 require('dotenv').config();
@@ -22,7 +23,10 @@ const { chromium } = require('playwright');
 
 const ROOT = path.join(__dirname, '..');
 const CONTENT_PATH = path.join(ROOT, 'output', 'current-content.json');
-const TEMPLATE_PATH = path.join(ROOT, 'templates', 'quote-card.html');
+const TEMPLATES = {
+  dark: path.join(ROOT, 'templates', 'quote-card.html'),
+  light: path.join(ROOT, 'templates', 'quote-card-light.html'),
+};
 const RAW_VIDEO_PATH = path.join(ROOT, 'output', 'raw.webm');
 const BRAND_CONFIG_PATH = path.join(ROOT, 'config', 'brand.json');
 
@@ -34,23 +38,37 @@ function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
 
+function resolveTemplateName(content) {
+  const requested = (process.env.QUOTE_TEMPLATE || 'alternate').toLowerCase().trim();
+  if (requested === 'dark' || requested === 'light') return requested;
+
+  // Alternate by calendar date so consecutive days get different looks.
+  const dateStr = content.date || new Date().toISOString().slice(0, 10);
+  const dayNum = Number(dateStr.replace(/-/g, '')) || 0;
+  return dayNum % 2 === 0 ? 'light' : 'dark';
+}
+
 async function main() {
   if (!fs.existsSync(CONTENT_PATH)) {
     throw new Error(
       `${path.relative(ROOT, CONTENT_PATH)} not found. Run "npm run generate" first.`
     );
   }
-  if (!fs.existsSync(TEMPLATE_PATH)) {
-    throw new Error(`Template not found: ${TEMPLATE_PATH}`);
-  }
 
   const content = readJson(CONTENT_PATH);
+  const templateName = resolveTemplateName(content);
+  const templatePath = TEMPLATES[templateName];
+
+  if (!fs.existsSync(templatePath)) {
+    throw new Error(`Template not found: ${templatePath}`);
+  }
+
   const brand = fs.existsSync(BRAND_CONFIG_PATH) ? readJson(BRAND_CONFIG_PATH) : {};
 
   const instagramHandle = brand.instagram || '@filterfunds';
   const website = (brand.website || 'https://filterfunds.com').replace(/^https?:\/\//, '');
 
-  const fileUrl = new URL(pathToFileURL(TEMPLATE_PATH).href);
+  const fileUrl = new URL(pathToFileURL(templatePath).href);
   fileUrl.searchParams.set('quote', content.quote);
   fileUrl.searchParams.set('handle', instagramHandle);
   fileUrl.searchParams.set('website', website);
@@ -85,7 +103,9 @@ async function main() {
     fs.rmSync(tmpVideoDir, { recursive: true, force: true });
   }
 
-  console.log(`Rendered ${DURATION_SECONDS}s quote-card video -> ${path.relative(ROOT, RAW_VIDEO_PATH)}`);
+  console.log(
+    `Rendered ${DURATION_SECONDS}s quote-card video (${templateName}) -> ${path.relative(ROOT, RAW_VIDEO_PATH)}`
+  );
 }
 
 if (require.main === module) {

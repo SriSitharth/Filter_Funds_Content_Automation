@@ -1,0 +1,56 @@
+name: Follow-up Story + YouTube Post
+
+on:
+  schedule:
+    # 15:30 UTC == 9:00 PM IST — 12 hours after the 9:00 AM IST morning post.
+    - cron: "30 15 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: filter-funds-followup-post
+  cancel-in-progress: false
+
+jobs:
+  run-followup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run +12h follow-up (IG Story + YouTube post)
+        env:
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_PRIVACY_STATUS: ${{ secrets.YOUTUBE_PRIVACY_STATUS }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: node scripts/run-followup.js
+
+      - name: Commit follow-up state
+        if: always()
+        run: |
+          git config user.name "filter-funds-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/pending-followup.json content/history.json || true
+          # pending file may be deleted on success — stage deletion too
+          git add -u content/pending-followup.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update follow-up state $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No follow-up state changes to commit."
+          fi

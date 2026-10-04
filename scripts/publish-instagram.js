@@ -24,17 +24,21 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
+const { publishAssetsToGithubRelease } = require('./lib/github-assets');
 
 const ROOT = path.join(__dirname, '..');
 const CONTENT_PATH = path.join(ROOT, 'output', 'current-content.json');
 const VIDEO_PATH = path.join(ROOT, 'output', 'video.mp4');
+const COVER_PATH = path.join(ROOT, 'output', 'cover.jpg');
 
 const GRAPH_VERSION = process.env.IG_GRAPH_VERSION || 'v21.0';
 const GRAPH_HOST = 'https://graph.instagram.com';
-const GITHUB_API = 'https://api.github.com';
 
 const POLL_INTERVAL_MS = 5000;
 const POLL_TIMEOUT_MS = 5 * 60 * 1000;
+const COVER_THUMB_OFFSET_MS = String(
+  Number(process.env.IG_COVER_THUMB_OFFSET_MS || 2500)
+);
 
 function requireEnv(name) {
   const value = process.env[name];
@@ -54,95 +58,6 @@ function buildCaption(content) {
     .filter((part) => part !== undefined && part !== null)
     .join('\n');
 }
-
-// --- GitHub Release asset hosting -----------------------------------------
-
-async function githubRequest(pathname, { method = 'GET', headers = {}, body } = {}) {
-  const token = requireEnv('GITHUB_TOKEN');
-  const res = await fetch(`${GITHUB_API}${pathname}`, {
-    method,
-    headers: {
-      Authorization: `Bearer ${token}`,
-      Accept: 'application/vnd.github+json',
-      'X-GitHub-Api-Version': '2022-11-28',
-      ...headers,
-    },
-    body,
-  });
-  const text = await res.text();
-  const data = text ? JSON.parse(text) : {};
-  if (!res.ok) {
-    throw new Error(`GitHub API ${method} ${pathname} failed: ${res.status} ${text}`);
-  }
-  return data;
-}
-
-async function getOrCreateRelease(repo, tagName) {
-  try {
-    return await githubRequest(`/repos/${repo}/releases/tags/${tagName}`);
-  } catch (err) {
-    return githubRequest(`/repos/${repo}/releases`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        tag_name: tagName,
-        name: `Filter Funds post — ${tagName}`,
-        body: 'Automated daily content release (hosts the video asset publicly for Instagram publishing).',
-        prerelease: false,
-      }),
-    });
-  }
-}
-
-async function uploadReleaseAsset(release, fileName, filePath, contentType) {
-  const token = requireEnv('GITHUB_TOKEN');
-  const fileBuffer = fs.readFileSync(filePath);
-  const uploadUrl = release.upload_url.replace('{?name,label}', `?name=${encodeURIComponent(fileName)}`);
-
-  const doUpload = () =>
-    fetch(uploadUrl, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github+json',
-        'Content-Type': contentType,
-        'Content-Length': String(fileBuffer.length),
-      },
-      body: fileBuffer,
-    });
-
-  let res = await doUpload();
-
-  if (res.status === 422) {
-    // Asset with this name already exists on the release (e.g. a re-run) —
-    // delete it and retry once.
-    const assets = await githubRequest(`/repos/${process.env.GITHUB_REPOSITORY}/releases/${release.id}/assets`);
-    const match = assets.find((asset) => asset.name === fileName);
-    if (match) {
-      await githubRequest(`/repos/${process.env.GITHUB_REPOSITORY}/releases/assets/${match.id}`, {
-        method: 'DELETE',
-      });
-    }
-    res = await doUpload();
-  }
-
-  if (!res.ok) {
-    const text = await res.text();
-    throw new Error(`GitHub asset upload failed: ${res.status} ${text}`);
-  }
-
-  return res.json();
-}
-
-async function publishVideoToGithubRelease(dateTag, videoPath) {
-  const repo = requireEnv('GITHUB_REPOSITORY');
-  const release = await getOrCreateRelease(repo, dateTag);
-  const fileName = `filter-funds-${dateTag}.mp4`;
-  const asset = await uploadReleaseAsset(release, fileName, videoPath, 'video/mp4');
-  return asset.browser_download_url;
-}
-
-// --- Instagram Graph API ----------------------------------------------------
 
 async function instagramRequest(pathname, params, method = 'GET') {
   const accessToken = requireEnv('IG_ACCESS_TOKEN');
@@ -169,17 +84,19 @@ async function instagramRequest(pathname, params, method = 'GET') {
   return data;
 }
 
-async function createReelContainer({ igUserId, videoUrl, caption }) {
-  const data = await instagramRequest(
-    `/${igUserId}/media`,
-    {
-      media_type: 'REELS',
-      video_url: videoUrl,
-      caption,
-      share_to_feed: 'true',
-    },
-    'POST'
-  );
+async function createReelContainer({ igUserId, videoUrl, caption, coverUrl }) {
+  const params = {
+    media_type: 'REELS',
+    video_url: videoUrl,
+    caption,
+    share_to_feed: 'true',
+    thumb_offset: COVER_THUMB_OFFSET_MS,
+  };
+  if (coverUrl) {
+    params.cover_url = coverUrl;
+  }
+
+  const data = await instagramRequest(`/${igUserId}/media`, params, 'POST');
   return data.id;
 }
 
@@ -201,8 +118,6 @@ async function publishContainer({ igUserId, containerId }) {
   return data.id;
 }
 
-// --- Main -------------------------------------------------------------------
-
 async function main() {
   if (!fs.existsSync(CONTENT_PATH)) {
     throw new Error(`${path.relative(ROOT, CONTENT_PATH)} not found. Run "npm run generate" first.`);
@@ -215,13 +130,36 @@ async function main() {
   const igUserId = requireEnv('IG_USER_ID');
   const dateTag = `post-${content.date || new Date().toISOString().slice(0, 10)}`;
 
-  console.log('Uploading video to a GitHub Release asset for public hosting...');
-  const videoUrl = await publishVideoToGithubRelease(dateTag, VIDEO_PATH);
-  console.log(`Public video URL: ${videoUrl}`);
+  let videoUrl = process.env.VIDEO_URL || null;
+  let coverUrl = process.env.COVER_URL || null;
+  let releaseTag = process.env.RELEASE_TAG || dateTag;
+
+  if (!videoUrl) {
+    console.log('Uploading video (+ cover) to a GitHub Release for public hosting...');
+    const uploaded = await publishAssetsToGithubRelease(dateTag, VIDEO_PATH, COVER_PATH);
+    videoUrl = uploaded.videoUrl;
+    coverUrl = uploaded.coverUrl;
+    releaseTag = uploaded.releaseTag;
+  } else {
+    console.log(`Using provided public video URL: ${videoUrl}`);
+  }
+
+  if (coverUrl) {
+    console.log(`Public cover URL: ${coverUrl}`);
+  } else {
+    console.warn(
+      `No cover URL available; using thumb_offset=${COVER_THUMB_OFFSET_MS}ms only.`
+    );
+  }
 
   const caption = buildCaption(content);
   console.log('Creating Instagram Reels container...');
-  const containerId = await createReelContainer({ igUserId, videoUrl, caption });
+  const containerId = await createReelContainer({
+    igUserId,
+    videoUrl,
+    caption,
+    coverUrl,
+  });
 
   console.log('Waiting for Instagram to finish processing the video...');
   await waitForContainerReady(containerId);
@@ -230,7 +168,7 @@ async function main() {
   const mediaId = await publishContainer({ igUserId, containerId });
 
   console.log(`Published Instagram Reel: media id ${mediaId}`);
-  return { mediaId, videoUrl };
+  return { mediaId, videoUrl, coverUrl, releaseTag };
 }
 
 if (require.main === module) {

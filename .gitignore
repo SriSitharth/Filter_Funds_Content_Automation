@@ -1,7 +1,9 @@
 node_modules/
 .env
+.env.example
 output/
 credentials/
+.env.*
 
 # OS files
 .DS_Store

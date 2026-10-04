@@ -10,7 +10,10 @@
     "build-video": "node scripts/build-video.js",
     "publish:youtube": "node scripts/publish-youtube.js",
     "publish:instagram": "node scripts/publish-instagram.js",
+    "publish:instagram-story": "node scripts/publish-instagram-story.js",
+    "publish:youtube-followup": "node scripts/publish-youtube-followup.js",
     "run-daily": "node scripts/run-daily.js",
+    "run-followup": "node scripts/run-followup.js",
     "youtube:auth": "node scripts/get-youtube-refresh-token.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,6 +29,7 @@
     "@anthropic-ai/sdk": "^0.32.1",
     "dotenv": "^16.4.5",
     "googleapis": "^144.0.0",
+    "openai": "^4.104.0",
     "playwright": "^1.48.0"
   }
 }

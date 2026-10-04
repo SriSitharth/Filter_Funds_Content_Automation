@@ -2,21 +2,28 @@
 /**
  * scripts/run-daily.js
  *
- * Orchestrates the full daily pipeline:
- *   1. generate-content.js  - Claude generates today's quote/post JSON
- *   2. render-design.js     - Playwright renders the branded quote-card video
- *   3. build-video.js       - ffmpeg encodes the final MP4 + cover thumbnail
- *   4. publish-youtube.js   - uploads as a YouTube Short
- *   5. publish-instagram.js - uploads as an Instagram Reel
- *
- * Steps 1-3 are required precursors: if any fails, the whole run aborts
- * (there's nothing to publish yet). Steps 4-5 are each run independently so
- * a failure on one platform doesn't prevent publishing on the other; the
- * process exits non-zero if either publish step failed, so CI surfaces the
- * failure, but both are always attempted.
+ * Orchestrates the morning pipeline:
+ *   1. generate-content.js
+ *   2. render-design.js
+ *   3. build-video.js
+ *   4. upload public GitHub Release assets (video + cover)
+ *   5. publish-youtube.js (YouTube Short)
+ *   6. publish-instagram.js (Instagram Reel)
+ *   7. write content/pending-followup.json for the +12h Story + YouTube post
  */
 
 require('dotenv').config();
+const path = require('path');
+const { publishAssetsToGithubRelease } = require('./lib/github-assets');
+const {
+  buildPendingFromContent,
+  writePending,
+} = require('./lib/pending-followup');
+
+const ROOT = path.join(__dirname, '..');
+const CONTENT_PATH = path.join(ROOT, 'output', 'current-content.json');
+const VIDEO_PATH = path.join(ROOT, 'output', 'video.mp4');
+const COVER_PATH = path.join(ROOT, 'output', 'cover.jpg');
 
 async function runRequiredStep(name, modulePath) {
   console.log(`\n=== ${name} ===`);
@@ -39,11 +46,12 @@ async function runPublishStep(name, modulePath) {
   }
 }
 
-// Instagram publishing is optional — GITHUB_TOKEN/GITHUB_REPOSITORY are
-// always present in Actions regardless of setup, so the real signal is
-// whether the user has actually added their Instagram credentials.
 function isInstagramConfigured() {
   return Boolean(process.env.IG_ACCESS_TOKEN && process.env.IG_USER_ID);
+}
+
+function isGitHubConfigured() {
+  return Boolean(process.env.GITHUB_TOKEN && process.env.GITHUB_REPOSITORY);
 }
 
 async function main() {
@@ -61,20 +69,61 @@ async function main() {
   await runRequiredStep('render-design', './render-design');
   await runRequiredStep('build-video', './build-video');
 
-  // Only now do we know there's an actual postable video, so only now do we
-  // mark the quote as used — a render/build failure above leaves the quote
-  // available to be generated again on the next run instead of wasting it.
   generateContent.recordHistory(record);
+
+  // Upload public assets once so Reel + evening Story/YouTube can share URLs.
+  let assets = { videoUrl: null, coverUrl: null, releaseTag: null };
+  if (isGitHubConfigured()) {
+    console.log('\n=== upload-public-assets ===');
+    const dateTag = `post-${record.date || new Date().toISOString().slice(0, 10)}`;
+    try {
+      assets = await publishAssetsToGithubRelease(dateTag, VIDEO_PATH, COVER_PATH);
+      console.log(`Public video URL: ${assets.videoUrl}`);
+      console.log(`Public cover URL: ${assets.coverUrl}`);
+    } catch (err) {
+      console.error('Fatal: public asset upload failed, aborting run.\n', err);
+      process.exit(1);
+    }
+  } else {
+    console.warn(
+      '\n=== upload-public-assets ===\nSkipping: GITHUB_TOKEN / GITHUB_REPOSITORY not set. ' +
+        'Instagram Reel/Story and the +12h follow-up need public media URLs.'
+    );
+  }
 
   const publishResults = [];
   publishResults.push(await runPublishStep('publish-youtube', './publish-youtube'));
 
   if (isInstagramConfigured()) {
+    if (assets.videoUrl) {
+      process.env.VIDEO_URL = assets.videoUrl;
+      if (assets.coverUrl) process.env.COVER_URL = assets.coverUrl;
+      if (assets.releaseTag) process.env.RELEASE_TAG = assets.releaseTag;
+    }
     publishResults.push(await runPublishStep('publish-instagram', './publish-instagram'));
   } else {
     console.log('\n=== publish-instagram ===');
     console.log('Skipping: IG_ACCESS_TOKEN / IG_USER_ID not set.');
-    publishResults.push({ name: 'publish-instagram', ok: true, result: 'skipped (not configured)' });
+    publishResults.push({
+      name: 'publish-instagram',
+      ok: true,
+      result: 'skipped (not configured)',
+    });
+  }
+
+  if (assets.videoUrl && assets.coverUrl) {
+    const pendingPath = writePending(
+      buildPendingFromContent(record, {
+        videoUrl: assets.videoUrl,
+        coverUrl: assets.coverUrl,
+        releaseTag: assets.releaseTag,
+      })
+    );
+    console.log(`\nQueued +12h follow-up -> ${path.relative(ROOT, pendingPath)}`);
+  } else {
+    console.warn(
+      '\nCould not queue +12h follow-up (missing public video/cover URLs).'
+    );
   }
 
   console.log('\n=== Summary ===');
