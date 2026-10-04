@@ -1,4 +1,22 @@
 {
-  "status": "idle",
-  "note": "Replaced each morning by run-daily.js with a pending payload for the +12h follow-up job."
+  "status": "pending",
+  "date": "2026-10-04",
+  "quote": "A steady investing habit turns patience into progress.",
+  "youtubeTitle": "Build Wealth With a Steady Investing Habit | Filter Funds",
+  "youtubeDescription": "Consistent investing can help you stay focused on long-term goals through changing markets. Build a habit, keep your plan simple, and give your investments time to grow. Learn more at www.filterfunds.com",
+  "instagramCaption": "Progress with money often begins with one simple habit: invest consistently and stay focused on the long term. Keep showing up for your goals. Learn more at www.filterfunds.com",
+  "hashtags": [
+    "#FilterFunds",
+    "#InvestingMindset",
+    "#LongTermInvesting",
+    "#FinancialDiscipline",
+    "#WealthBuilding",
+    "#PersonalFinance",
+    "#InvestingHabits"
+  ],
+  "releaseTag": "post-2026-10-04",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-04/filter-funds-post-2026-10-04.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-04/filter-funds-post-2026-10-04-cover.jpg",
+  "createdAt": "2026-10-04T11:14:25.214Z",
+  "followUpAt": "2026-10-04T23:14:25.214Z"
 }
