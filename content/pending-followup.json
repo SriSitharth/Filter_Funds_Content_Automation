@@ -19,5 +19,7 @@
   "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-05/filter-funds-post-2026-10-05.mp4",
   "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-05/filter-funds-post-2026-10-05-cover.jpg",
   "createdAt": "2026-10-05T10:43:29.418Z",
-  "followUpAt": "2026-10-05T22:43:29.418Z"
+  "followUpAt": "2026-10-05T22:43:29.418Z",
+  "lastAttemptAt": "2026-10-05T22:06:09.261Z",
+  "lastError": "publish-instagram-story: Instagram API POST /28780073431629167/media_publish failed: {\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,092,647,136,421,106 cannot be found.\",\"fbtrace_id\":\"Al3PQ30mfs7zvhtpOXlkdIJ\"}"
 }
