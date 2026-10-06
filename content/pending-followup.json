@@ -1,25 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-05",
-  "quote": "Every thoughtful money habit is a vote for the future you want.",
-  "youtubeTitle": "Build Your Future One Money Habit at a Time | Filter Funds",
-  "youtubeDescription": "Lasting financial progress starts with the small choices you repeat. Make room for thoughtful habits, stay consistent, and give your goals time to grow. Learn more at www.filterfunds.com",
-  "instagramCaption": "Your financial future is shaped by the habits you practice today. Choose one thoughtful step, then keep showing up. Learn more at www.filterfunds.com",
+  "date": "2026-10-06",
+  "quote": "Let your investing plan be guided by purpose, not by the noise of the moment.",
+  "youtubeTitle": "Invest With Purpose, Not Noise | Filter Funds",
+  "youtubeDescription": "Build a calmer investing mindset by staying focused on your goals and practicing financial discipline over time. Learn more at www.filterfunds.com",
+  "instagramCaption": "Market noise comes and goes. A clear purpose can help you stay focused on the habits that matter. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#MoneyHabits",
-    "#FinancialDiscipline",
     "#InvestingMindset",
+    "#FinancialDiscipline",
     "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#SIPDiscipline"
+    "#InvestingHabits"
   ],
-  "releaseTag": "post-2026-10-05",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-05/filter-funds-post-2026-10-05.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-05/filter-funds-post-2026-10-05-cover.jpg",
-  "createdAt": "2026-10-05T10:43:29.418Z",
-  "followUpAt": "2026-10-05T22:43:29.418Z",
-  "lastAttemptAt": "2026-10-05T22:06:09.261Z",
-  "lastError": "publish-instagram-story: Instagram API POST /28780073431629167/media_publish failed: {\"message\":\"The requested resource does not exist\",\"type\":\"OAuthException\",\"code\":24,\"error_subcode\":2207006,\"is_transient\":false,\"error_user_title\":\"Media Not Found\",\"error_user_msg\":\"The media with 18,092,647,136,421,106 cannot be found.\",\"fbtrace_id\":\"Al3PQ30mfs7zvhtpOXlkdIJ\"}"
+  "releaseTag": "post-2026-10-06",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-06/filter-funds-post-2026-10-06.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-06/filter-funds-post-2026-10-06-cover.jpg",
+  "createdAt": "2026-10-06T10:37:02.309Z",
+  "followUpAt": "2026-10-06T22:37:02.309Z"
 }
