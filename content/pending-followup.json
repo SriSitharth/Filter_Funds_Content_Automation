@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-13",
-  "quote": "Let each patient contribution move your financial goals from intention toward reality.",
-  "youtubeTitle": "Small Contributions, Steady Progress | Filter Funds",
-  "youtubeDescription": "Financial goals take shape through thoughtful habits repeated over time. Keep your plan clear, stay patient, and let consistency guide your progress.\n\nExplore more at www.filterfunds.com",
-  "instagramCaption": "Big goals can begin with one thoughtful step. Keep your contributions aligned with your plan, and give patience room to work.\n\nwww.filterfunds.com",
+  "date": "2026-10-14",
+  "quote": "A strong financial future begins with decisions you can sustain, not sacrifices you can't.",
+  "youtubeTitle": "Build a Financial Future You Can Sustain | Filter Funds",
+  "youtubeDescription": "Lasting progress comes from financial habits that fit your life and goals. Choose a steady approach you can keep following over time.\n\nExplore more at www.filterfunds.com",
+  "instagramCaption": "A strong financial future doesn’t require perfect choices—just thoughtful habits you can sustain. Keep showing up for your goals, one decision at a time.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#InvestingMindset",
     "#FinancialDiscipline",
+    "#PersonalFinance",
     "#LongTermInvesting",
-    "#SIP",
     "#WealthBuilding",
-    "#PersonalFinance"
+    "#MoneyHabits",
+    "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-10-13",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-13/filter-funds-post-2026-10-13.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-13/filter-funds-post-2026-10-13-cover.jpg",
-  "createdAt": "2026-10-13T10:51:52.585Z",
-  "followUpAt": "2026-10-13T22:51:52.585Z",
-  "lastAttemptAt": "2026-10-13T20:46:07.552Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-14",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-14/filter-funds-post-2026-10-14.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-14/filter-funds-post-2026-10-14-cover.jpg",
+  "createdAt": "2026-10-14T08:54:53.605Z",
+  "followUpAt": "2026-10-14T20:54:53.605Z"
 }
