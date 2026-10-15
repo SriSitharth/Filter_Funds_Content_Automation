@@ -1,24 +1,23 @@
 {
   "status": "pending",
-  "date": "2026-10-14",
-  "quote": "A strong financial future begins with decisions you can sustain, not sacrifices you can't.",
-  "youtubeTitle": "Build a Financial Future You Can Sustain | Filter Funds",
-  "youtubeDescription": "Lasting progress comes from financial habits that fit your life and goals. Choose a steady approach you can keep following over time.\n\nExplore more at www.filterfunds.com",
-  "instagramCaption": "A strong financial future doesn’t require perfect choices—just thoughtful habits you can sustain. Keep showing up for your goals, one decision at a time.\n\nwww.filterfunds.com",
+  "date": "2026-10-15",
+  "quote": "A lasting investing habit is built one thoughtful contribution at a time.",
+  "youtubeTitle": "Build a Lasting Investing Habit, One Step at a Time",
+  "youtubeDescription": "Progress in investing comes from habits you can maintain. Keep your approach thoughtful, consistent, and aligned with your long-term goals. Learn more at www.filterfunds.com",
+  "instagramCaption": "Big goals are supported by small habits repeated over time. Make your investing routine thoughtful, consistent, and suited to your long-term plans.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#FinancialDiscipline",
-    "#PersonalFinance",
+    "#InvestingMindset",
     "#LongTermInvesting",
+    "#FinancialDiscipline",
     "#WealthBuilding",
-    "#MoneyHabits",
-    "#InvestingMindset"
+    "#SIPDiscipline",
+    "#PersonalFinance",
+    "#InvestingHabits"
   ],
-  "releaseTag": "post-2026-10-14",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-14/filter-funds-post-2026-10-14.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-14/filter-funds-post-2026-10-14-cover.jpg",
-  "createdAt": "2026-10-14T08:54:53.605Z",
-  "followUpAt": "2026-10-14T20:54:53.605Z",
-  "lastAttemptAt": "2026-10-14T19:32:51.030Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-15",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-15/filter-funds-post-2026-10-15.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-15/filter-funds-post-2026-10-15-cover.jpg",
+  "createdAt": "2026-10-15T08:29:54.681Z",
+  "followUpAt": "2026-10-15T20:29:54.681Z"
 }
