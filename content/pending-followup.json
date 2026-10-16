@@ -1,25 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-15",
-  "quote": "A lasting investing habit is built one thoughtful contribution at a time.",
-  "youtubeTitle": "Build a Lasting Investing Habit, One Step at a Time",
-  "youtubeDescription": "Progress in investing comes from habits you can maintain. Keep your approach thoughtful, consistent, and aligned with your long-term goals. Learn more at www.filterfunds.com",
-  "instagramCaption": "Big goals are supported by small habits repeated over time. Make your investing routine thoughtful, consistent, and suited to your long-term plans.\n\nwww.filterfunds.com",
+  "date": "2026-10-16",
+  "quote": "A clear financial goal gives every patient investment a direction.",
+  "youtubeTitle": "Give Your Investments a Clear Direction | Filter Funds",
+  "youtubeDescription": "A clear financial goal can help you stay focused and make your investing habits more intentional. Build patiently, stay consistent, and let your plan guide your choices. Learn more at www.filterfunds.com",
+  "instagramCaption": "Let your goals guide your money habits. Patient, purposeful investing can help you stay focused on what matters. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#InvestingMindset",
+    "#FinancialGoals",
     "#LongTermInvesting",
-    "#FinancialDiscipline",
     "#WealthBuilding",
-    "#SIPDiscipline",
-    "#PersonalFinance",
-    "#InvestingHabits"
+    "#FinancialDiscipline",
+    "#PersonalFinance"
   ],
-  "releaseTag": "post-2026-10-15",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-15/filter-funds-post-2026-10-15.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-15/filter-funds-post-2026-10-15-cover.jpg",
-  "createdAt": "2026-10-15T08:29:54.681Z",
-  "followUpAt": "2026-10-15T20:29:54.681Z",
-  "lastAttemptAt": "2026-10-15T19:17:32.566Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-16",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-16/filter-funds-post-2026-10-16.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-16/filter-funds-post-2026-10-16-cover.jpg",
+  "createdAt": "2026-10-16T08:22:52.882Z",
+  "followUpAt": "2026-10-16T20:22:52.882Z"
 }
