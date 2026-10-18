@@ -1,23 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-17",
-  "quote": "Give your money a long-term purpose, then let patience do its quiet work.",
-  "youtubeTitle": "Give Your Money a Long-Term Purpose",
-  "youtubeDescription": "A thoughtful investing mindset starts with knowing what your money is working toward. Stay focused on your long-term goals and give your plan time to grow. Learn more at www.filterfunds.com",
-  "instagramCaption": "Give your money a long-term purpose, then let patience do its quiet work. Keep your goals in sight and your financial habits steady.\n\nwww.filterfunds.com",
+  "date": "2026-10-18",
+  "quote": "Financial progress often begins with the quiet choice to save before you spend.",
+  "youtubeTitle": "The Quiet Choice That Builds Financial Progress",
+  "youtubeDescription": "Small, deliberate money habits can help create a stronger financial foundation over time. Make room for saving, stay consistent, and keep your goals in view. Learn more at www.filterfunds.com",
+  "instagramCaption": "Financial progress doesn’t always make noise. Sometimes it starts with choosing to save before you spend. Build the habit, one thoughtful choice at a time.\n\nwww.filterfunds.com",
   "hashtags": [
-    "#InvestingMindset",
-    "#LongTermInvesting",
-    "#FinancialDiscipline",
-    "#WealthBuilding",
+    "#FilterFunds",
     "#PersonalFinance",
-    "#FilterFunds"
+    "#FinancialDiscipline",
+    "#SavingHabits",
+    "#LongTermInvesting",
+    "#WealthBuilding",
+    "#MoneyMindset"
   ],
-  "releaseTag": "post-2026-10-17",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-17/filter-funds-post-2026-10-17.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-17/filter-funds-post-2026-10-17-cover.jpg",
-  "createdAt": "2026-10-17T07:58:42.351Z",
-  "followUpAt": "2026-10-17T19:58:42.351Z",
-  "lastAttemptAt": "2026-10-17T17:53:47.385Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-18",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-18/filter-funds-post-2026-10-18.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-18/filter-funds-post-2026-10-18-cover.jpg",
+  "createdAt": "2026-10-18T08:13:57.747Z",
+  "followUpAt": "2026-10-18T20:13:57.747Z"
 }
