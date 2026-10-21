@@ -1,25 +1,23 @@
 {
   "status": "pending",
-  "date": "2026-10-20",
-  "quote": "A simple money routine can make tomorrow’s choices feel less uncertain.",
-  "youtubeTitle": "Build Confidence with a Simple Money Routine | Filter Funds",
-  "youtubeDescription": "Small, repeatable money habits can bring more clarity to your financial journey. Keep learning, stay consistent, and give your goals room to grow. Visit www.filterfunds.com",
-  "instagramCaption": "A little structure today can make future money decisions feel clearer. Choose one habit you can keep, and let consistency build over time.\n\nLearn more at www.filterfunds.com",
+  "date": "2026-10-21",
+  "quote": "The strongest financial habits are the ones you can keep through ordinary days.",
+  "youtubeTitle": "Build Financial Habits That Last | Filter Funds",
+  "youtubeDescription": "Lasting financial progress comes from simple habits repeated through ordinary days. Keep your money choices intentional and your long-term goals in view.\n\nLearn more: www.filterfunds.com",
+  "instagramCaption": "Big financial goals are supported by small habits you can sustain. Keep showing up for your future, one ordinary day at a time.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#PersonalFinance",
     "#FinancialHabits",
     "#InvestingMindset",
     "#LongTermInvesting",
     "#WealthBuilding",
-    "#MoneyDiscipline",
-    "#FinancialWellness"
+    "#PersonalFinance",
+    "#FinancialDiscipline",
+    "#MoneyGoals"
   ],
-  "releaseTag": "post-2026-10-20",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-20/filter-funds-post-2026-10-20.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-20/filter-funds-post-2026-10-20-cover.jpg",
-  "createdAt": "2026-10-20T08:46:04.913Z",
-  "followUpAt": "2026-10-20T20:46:04.913Z",
-  "lastAttemptAt": "2026-10-20T19:26:32.396Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-21",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-21/filter-funds-post-2026-10-21.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-21/filter-funds-post-2026-10-21-cover.jpg",
+  "createdAt": "2026-10-21T08:47:36.058Z",
+  "followUpAt": "2026-10-21T20:47:36.058Z"
 }
