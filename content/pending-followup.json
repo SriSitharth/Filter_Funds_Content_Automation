@@ -1,25 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-21",
-  "quote": "The strongest financial habits are the ones you can keep through ordinary days.",
-  "youtubeTitle": "Build Financial Habits That Last | Filter Funds",
-  "youtubeDescription": "Lasting financial progress comes from simple habits repeated through ordinary days. Keep your money choices intentional and your long-term goals in view.\n\nLearn more: www.filterfunds.com",
-  "instagramCaption": "Big financial goals are supported by small habits you can sustain. Keep showing up for your future, one ordinary day at a time.\n\nwww.filterfunds.com",
+  "date": "2026-10-22",
+  "quote": "A regular investing habit turns today's intention into tomorrow's financial resilience.",
+  "youtubeTitle": "Build Financial Resilience Through Consistent Investing | Filter Funds",
+  "youtubeDescription": "Small, regular investing habits can help you stay focused on your long-term financial goals. Keep your plan thoughtful, sustainable, and aligned with your own circumstances. Learn more at www.filterfunds.com",
+  "instagramCaption": "Financial resilience grows through habits you can maintain. Keep showing up for your long-term goals, one thoughtful contribution at a time.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#FinancialHabits",
     "#InvestingMindset",
+    "#FinancialDiscipline",
     "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#FinancialDiscipline",
-    "#MoneyGoals"
+    "#SIP"
   ],
-  "releaseTag": "post-2026-10-21",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-21/filter-funds-post-2026-10-21.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-21/filter-funds-post-2026-10-21-cover.jpg",
-  "createdAt": "2026-10-21T08:47:36.058Z",
-  "followUpAt": "2026-10-21T20:47:36.058Z",
-  "lastAttemptAt": "2026-10-21T19:26:28.895Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-22",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-22/filter-funds-post-2026-10-22.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-22/filter-funds-post-2026-10-22-cover.jpg",
+  "createdAt": "2026-10-22T08:48:46.461Z",
+  "followUpAt": "2026-10-22T20:48:46.461Z"
 }
