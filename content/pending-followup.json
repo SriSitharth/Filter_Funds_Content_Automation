@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-24",
-  "quote": "Let your financial goals grow through steady choices, not sudden bursts of effort.",
-  "youtubeTitle": "Steady Choices Build Financial Progress | Filter Funds",
-  "youtubeDescription": "Lasting financial progress comes from choices you can repeat. Keep your goals in view, build healthy money habits, and give your plan time to work. Learn more at www.filterfunds.com",
-  "instagramCaption": "Big financial goals are supported by small choices made consistently. Keep showing up for your future. ✨\n\nwww.filterfunds.com",
+  "date": "2026-10-25",
+  "quote": "A thoughtful pause before spending can protect the plans you’re building for tomorrow.",
+  "youtubeTitle": "Pause Before You Spend: A Simple Habit for Your Financial Future",
+  "youtubeDescription": "Small moments of awareness can help keep your spending aligned with what matters most. Build financial habits that support your long-term goals. Learn more at www.filterfunds.com",
+  "instagramCaption": "A thoughtful pause can make room for choices that support your future. Spend with intention and keep your long-term goals in view.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#FinancialDiscipline",
-    "#InvestingMindset",
+    "#MoneyHabits",
+    "#PersonalFinance",
     "#LongTermInvesting",
     "#WealthBuilding",
-    "#PersonalFinance",
-    "#MoneyHabits"
+    "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-10-24",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-24/filter-funds-post-2026-10-24.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-24/filter-funds-post-2026-10-24-cover.jpg",
-  "createdAt": "2026-10-24T08:19:26.402Z",
-  "followUpAt": "2026-10-24T20:19:26.402Z",
-  "lastAttemptAt": "2026-10-24T18:16:18.492Z",
-  "lastError": "publish-instagram-story: Instagram API POST /28780073431629167/media_publish failed: {\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AjHsUdAE5pKx_glHtIo0f2j\"}; publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-25",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-25/filter-funds-post-2026-10-25.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-25/filter-funds-post-2026-10-25-cover.jpg",
+  "createdAt": "2026-10-25T08:38:25.829Z",
+  "followUpAt": "2026-10-25T20:38:25.829Z"
 }
