@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-25",
-  "quote": "A thoughtful pause before spending can protect the plans you’re building for tomorrow.",
-  "youtubeTitle": "Pause Before You Spend: A Simple Habit for Your Financial Future",
-  "youtubeDescription": "Small moments of awareness can help keep your spending aligned with what matters most. Build financial habits that support your long-term goals. Learn more at www.filterfunds.com",
-  "instagramCaption": "A thoughtful pause can make room for choices that support your future. Spend with intention and keep your long-term goals in view.\n\nwww.filterfunds.com",
+  "date": "2026-10-27",
+  "quote": "Progress with money comes from choosing a pace you can maintain, not a sprint you can't sustain.",
+  "youtubeTitle": "Build Wealth at a Pace You Can Sustain | Filter Funds",
+  "youtubeDescription": "A lasting financial routine is one that fits your life and keeps moving forward. Focus on habits you can maintain, and give your long-term goals room to grow.\n\nLearn more at www.filterfunds.com",
+  "instagramCaption": "You don’t need a perfect start or a frantic sprint. Choose a financial pace you can maintain, and keep showing up for the future you’re building.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#FinancialDiscipline",
-    "#MoneyHabits",
-    "#PersonalFinance",
     "#LongTermInvesting",
     "#WealthBuilding",
+    "#PersonalFinance",
+    "#MoneyHabits",
     "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-10-25",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-25/filter-funds-post-2026-10-25.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-25/filter-funds-post-2026-10-25-cover.jpg",
-  "createdAt": "2026-10-25T08:38:25.829Z",
-  "followUpAt": "2026-10-25T20:38:25.829Z",
-  "lastAttemptAt": "2026-10-26T20:39:26.728Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-27",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-27/filter-funds-post-2026-10-27.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-27/filter-funds-post-2026-10-27-cover.jpg",
+  "createdAt": "2026-10-27T09:14:13.843Z",
+  "followUpAt": "2026-10-27T21:14:13.843Z"
 }
