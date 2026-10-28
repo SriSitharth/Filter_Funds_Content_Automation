@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-10-27",
-  "quote": "Progress with money comes from choosing a pace you can maintain, not a sprint you can't sustain.",
-  "youtubeTitle": "Build Wealth at a Pace You Can Sustain | Filter Funds",
-  "youtubeDescription": "A lasting financial routine is one that fits your life and keeps moving forward. Focus on habits you can maintain, and give your long-term goals room to grow.\n\nLearn more at www.filterfunds.com",
-  "instagramCaption": "You don’t need a perfect start or a frantic sprint. Choose a financial pace you can maintain, and keep showing up for the future you’re building.\n\nwww.filterfunds.com",
+  "date": "2026-10-28",
+  "quote": "A resilient financial future is built by habits that hold steady through changing seasons.",
+  "youtubeTitle": "Build Financial Resilience Through Steady Habits",
+  "youtubeDescription": "Lasting financial progress comes from simple habits you can maintain through life’s changing seasons. Keep your goals clear, your choices thoughtful, and your plan grounded in patience. Learn more at www.filterfunds.com",
+  "instagramCaption": "Build habits that can weather changing seasons. Steady, thoughtful choices help keep your financial goals in focus. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#FinancialDiscipline",
+    "#InvestingMindset",
     "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#MoneyHabits",
-    "#InvestingMindset"
+    "#MoneyHabits"
   ],
-  "releaseTag": "post-2026-10-27",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-27/filter-funds-post-2026-10-27.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-27/filter-funds-post-2026-10-27-cover.jpg",
-  "createdAt": "2026-10-27T09:14:13.843Z",
-  "followUpAt": "2026-10-27T21:14:13.843Z",
-  "lastAttemptAt": "2026-10-27T20:09:56.105Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-28",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-28/filter-funds-post-2026-10-28.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-28/filter-funds-post-2026-10-28-cover.jpg",
+  "createdAt": "2026-10-28T09:54:38.096Z",
+  "followUpAt": "2026-10-28T21:54:38.096Z"
 }
