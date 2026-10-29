@@ -1,24 +1,23 @@
 {
   "status": "pending",
-  "date": "2026-10-28",
-  "quote": "A resilient financial future is built by habits that hold steady through changing seasons.",
-  "youtubeTitle": "Build Financial Resilience Through Steady Habits",
-  "youtubeDescription": "Lasting financial progress comes from simple habits you can maintain through life’s changing seasons. Keep your goals clear, your choices thoughtful, and your plan grounded in patience. Learn more at www.filterfunds.com",
-  "instagramCaption": "Build habits that can weather changing seasons. Steady, thoughtful choices help keep your financial goals in focus. Learn more at www.filterfunds.com",
+  "date": "2026-10-29",
+  "quote": "A long-term plan gains strength when today's money choices leave space for tomorrow.",
+  "youtubeTitle": "Make Room for Tomorrow | A Long-Term Money Mindset",
+  "youtubeDescription": "Build a thoughtful financial routine by making choices today that support your future goals. Keep your approach steady, realistic, and suited to your own circumstances. Learn more at www.filterfunds.com",
+  "instagramCaption": "Your future goals deserve a place in today's decisions. Make thoughtful choices, stay grounded in your plan, and give long-term progress room to grow.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#FinancialDiscipline",
     "#InvestingMindset",
     "#LongTermInvesting",
+    "#FinancialDiscipline",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#MoneyHabits"
+    "#MoneyHabits",
+    "#Investing"
   ],
-  "releaseTag": "post-2026-10-28",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-28/filter-funds-post-2026-10-28.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-28/filter-funds-post-2026-10-28-cover.jpg",
-  "createdAt": "2026-10-28T09:54:38.096Z",
-  "followUpAt": "2026-10-28T21:54:38.096Z",
-  "lastAttemptAt": "2026-10-28T20:24:56.687Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-29",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29-cover.jpg",
+  "createdAt": "2026-10-29T10:16:54.991Z",
+  "followUpAt": "2026-10-29T22:16:54.991Z"
 }
