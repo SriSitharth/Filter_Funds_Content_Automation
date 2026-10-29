@@ -19,5 +19,7 @@
   "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29.mp4",
   "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29-cover.jpg",
   "createdAt": "2026-10-29T10:16:54.991Z",
-  "followUpAt": "2026-10-29T22:16:54.991Z"
+  "followUpAt": "2026-10-29T22:16:54.991Z",
+  "lastAttemptAt": "2026-10-29T20:24:15.216Z",
+  "lastError": "publish-instagram-story: Instagram API POST /28780073431629167/media_publish failed: {\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AQW_12MkvD7VlkAS_HYOvYT\"}; publish-youtube-followup: invalid_grant"
 }
