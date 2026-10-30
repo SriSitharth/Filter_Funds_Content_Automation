@@ -1,10 +1,10 @@
 {
   "status": "pending",
-  "date": "2026-10-29",
-  "quote": "A long-term plan gains strength when today's money choices leave space for tomorrow.",
-  "youtubeTitle": "Make Room for Tomorrow | A Long-Term Money Mindset",
-  "youtubeDescription": "Build a thoughtful financial routine by making choices today that support your future goals. Keep your approach steady, realistic, and suited to your own circumstances. Learn more at www.filterfunds.com",
-  "instagramCaption": "Your future goals deserve a place in today's decisions. Make thoughtful choices, stay grounded in your plan, and give long-term progress room to grow.\n\nwww.filterfunds.com",
+  "date": "2026-10-30",
+  "quote": "Let your investing plan be simple enough to follow and steady enough to last.",
+  "youtubeTitle": "Build an Investing Plan You Can Stick With | Filter Funds",
+  "youtubeDescription": "Long-term investing is not about making every decision perfectly. A clear, manageable plan can help you stay focused through changing markets and busy days. Build habits that fit your goals and keep learning along the way.\n\nLearn more at www.filterfunds.com",
+  "instagramCaption": "A plan works best when it fits real life. Keep your investing approach clear, consistent, and focused on the long term.\n\nLearn more: www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#InvestingMindset",
@@ -12,14 +12,11 @@
     "#FinancialDiscipline",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#MoneyHabits",
     "#Investing"
   ],
-  "releaseTag": "post-2026-10-29",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-29/filter-funds-post-2026-10-29-cover.jpg",
-  "createdAt": "2026-10-29T10:16:54.991Z",
-  "followUpAt": "2026-10-29T22:16:54.991Z",
-  "lastAttemptAt": "2026-10-29T20:24:15.216Z",
-  "lastError": "publish-instagram-story: Instagram API POST /28780073431629167/media_publish failed: {\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AQW_12MkvD7VlkAS_HYOvYT\"}; publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-30",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-30/filter-funds-post-2026-10-30.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-30/filter-funds-post-2026-10-30-cover.jpg",
+  "createdAt": "2026-10-30T10:18:21.670Z",
+  "followUpAt": "2026-10-30T22:18:21.670Z"
 }
