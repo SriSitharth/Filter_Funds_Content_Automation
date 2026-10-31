@@ -1,24 +1,23 @@
 {
   "status": "pending",
-  "date": "2026-10-30",
-  "quote": "Let your investing plan be simple enough to follow and steady enough to last.",
-  "youtubeTitle": "Build an Investing Plan You Can Stick With | Filter Funds",
-  "youtubeDescription": "Long-term investing is not about making every decision perfectly. A clear, manageable plan can help you stay focused through changing markets and busy days. Build habits that fit your goals and keep learning along the way.\n\nLearn more at www.filterfunds.com",
-  "instagramCaption": "A plan works best when it fits real life. Keep your investing approach clear, consistent, and focused on the long term.\n\nLearn more: www.filterfunds.com",
+  "date": "2026-10-31",
+  "quote": "Your financial goals move closer when today's choices make room for tomorrow.",
+  "youtubeTitle": "Make Room for Tomorrow | A Financial Discipline Reminder",
+  "youtubeDescription": "Small, intentional money choices can help keep your long-term goals in view. Build habits that fit your life and stay consistent with your plan. Learn more at www.filterfunds.com",
+  "instagramCaption": "Make room for tomorrow in the choices you make today. A little intention can help your financial habits stay aligned with the future you’re building. Explore more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
+    "#FinancialDiscipline",
     "#InvestingMindset",
     "#LongTermInvesting",
-    "#FinancialDiscipline",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#Investing"
+    "#MoneyHabits",
+    "#FinancialGoals"
   ],
-  "releaseTag": "post-2026-10-30",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-30/filter-funds-post-2026-10-30.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-30/filter-funds-post-2026-10-30-cover.jpg",
-  "createdAt": "2026-10-30T10:18:21.670Z",
-  "followUpAt": "2026-10-30T22:18:21.670Z",
-  "lastAttemptAt": "2026-10-30T19:58:22.874Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-10-31",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-31/filter-funds-post-2026-10-31.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-10-31/filter-funds-post-2026-10-31-cover.jpg",
+  "createdAt": "2026-10-31T09:53:12.150Z",
+  "followUpAt": "2026-10-31T21:53:12.150Z"
 }
