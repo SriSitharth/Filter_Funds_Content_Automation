@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-08",
-  "quote": "A thoughtful investing routine helps your long-term goals stay present in everyday decisions.",
-  "youtubeTitle": "Keep Your Long-Term Goals in Sight | Filter Funds",
-  "youtubeDescription": "Everyday decisions can support the future you're working toward. Build an investing routine that fits your life, stay consistent, and give your goals time to grow. Learn more at www.filterfunds.com",
-  "instagramCaption": "Keep your long-term goals in sight, even on ordinary days. A thoughtful investing routine can help turn intention into a lasting habit.\n\nLearn more: www.filterfunds.com",
+  "date": "2026-11-09",
+  "quote": "Make consistency your strategy: small, considered steps can keep your long-term goals moving forward.",
+  "youtubeTitle": "Let Consistency Move Your Financial Goals Forward",
+  "youtubeDescription": "Long-term financial progress is built through habits you can sustain. Keep your goals in view, make thoughtful choices, and give your plan time to work. Explore more at www.filterfunds.com",
+  "instagramCaption": "Big goals don’t require a perfect start—just a steady one. Make thoughtful choices you can repeat, and keep your long-term goals in view.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#InvestingMindset",
-    "#LongTermInvesting",
     "#FinancialDiscipline",
+    "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#InvestingHabits"
+    "#Consistency"
   ],
-  "releaseTag": "post-2026-11-08",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-08/filter-funds-post-2026-11-08.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-08/filter-funds-post-2026-11-08-cover.jpg",
-  "createdAt": "2026-11-08T10:38:32.432Z",
-  "followUpAt": "2026-11-08T22:38:32.432Z",
-  "lastAttemptAt": "2026-11-08T19:50:23.199Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-09",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-09/filter-funds-post-2026-11-09.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-09/filter-funds-post-2026-11-09-cover.jpg",
+  "createdAt": "2026-11-09T11:55:01.379Z",
+  "followUpAt": "2026-11-09T23:55:01.379Z"
 }
