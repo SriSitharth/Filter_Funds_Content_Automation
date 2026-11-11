@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-10",
-  "quote": "A clear savings habit gives your long-term goals a quiet place to grow.",
-  "youtubeTitle": "Build Long-Term Goals with a Simple Savings Habit | Filter Funds",
-  "youtubeDescription": "Small, consistent savings choices can help keep your long-term goals in focus. Build a routine that fits your life and give your future plans room to grow. Learn more at www.filterfunds.com",
-  "instagramCaption": "Give your long-term goals a place in your everyday routine. A simple savings habit can help you stay focused, one choice at a time.\n\nwww.filterfunds.com",
+  "date": "2026-11-11",
+  "quote": "A regular SIP is a promise to your future, kept one contribution at a time.",
+  "youtubeTitle": "Keep Your SIP Promise | Filter Funds",
+  "youtubeDescription": "Build financial discipline by making investing a steady part of your routine. Learn more at www.filterfunds.com",
+  "instagramCaption": "A regular SIP is a promise to your future, kept one contribution at a time. Stay consistent with a plan that fits your goals and your life.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
+    "#SIP",
+    "#InvestingMindset",
     "#FinancialDiscipline",
-    "#SavingsHabit",
-    "#LongTermGoals",
-    "#PersonalFinance",
-    "#MoneyMindset",
-    "#WealthBuilding"
+    "#LongTermInvesting",
+    "#WealthBuilding",
+    "#PersonalFinance"
   ],
-  "releaseTag": "post-2026-11-10",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-10/filter-funds-post-2026-11-10.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-10/filter-funds-post-2026-11-10-cover.jpg",
-  "createdAt": "2026-11-10T11:28:54.888Z",
-  "followUpAt": "2026-11-10T23:28:54.888Z",
-  "lastAttemptAt": "2026-11-10T21:22:27.840Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-11",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-11/filter-funds-post-2026-11-11.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-11/filter-funds-post-2026-11-11-cover.jpg",
+  "createdAt": "2026-11-11T11:18:11.060Z",
+  "followUpAt": "2026-11-11T23:18:11.060Z"
 }
