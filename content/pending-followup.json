@@ -17,5 +17,7 @@
   "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-13/filter-funds-post-2026-11-13.mp4",
   "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-13/filter-funds-post-2026-11-13-cover.jpg",
   "createdAt": "2026-11-13T11:19:38.428Z",
-  "followUpAt": "2026-11-13T23:19:38.428Z"
+  "followUpAt": "2026-11-13T23:19:38.428Z",
+  "lastAttemptAt": "2026-11-13T21:28:52.855Z",
+  "lastError": "publish-youtube-followup: invalid_grant"
 }
