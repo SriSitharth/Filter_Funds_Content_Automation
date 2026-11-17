@@ -1,25 +1,23 @@
 {
   "status": "pending",
-  "date": "2026-11-16",
-  "quote": "A patient financial plan leaves room for life today while keeping tomorrow in sight.",
-  "youtubeTitle": "Build a Financial Plan That Balances Today and Tomorrow",
-  "youtubeDescription": "A thoughtful financial plan can support today's needs while helping you stay focused on long-term goals. Keep your approach clear, realistic, and consistent. Learn more at www.filterfunds.com",
-  "instagramCaption": "Your financial plan should make space for life today and keep your future goals in view. Choose habits you can sustain. Explore more at www.filterfunds.com",
+  "date": "2026-11-17",
+  "quote": "Let your savings grow quietly in the background while you focus on living with intention.",
+  "youtubeTitle": "Build Wealth Quietly Through Consistent Saving | Filter Funds",
+  "youtubeDescription": "Financial progress doesn’t need dramatic moves. A consistent saving habit can help you stay focused on your goals while making room for the life you’re living today. Explore more at www.filterfunds.com",
+  "instagramCaption": "Quiet progress still counts. Make saving a regular part of your routine, and keep your goals in view as life unfolds. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#PersonalFinance",
-    "#FinancialPlanning",
-    "#LongTermInvesting",
-    "#MoneyMindset",
+    "#SavingHabit",
+    "#FinancialDiscipline",
     "#WealthBuilding",
-    "#InvestingDiscipline",
-    "#FinancialHabits"
+    "#PersonalFinance",
+    "#MoneyMindset",
+    "#LongTermGoals",
+    "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-11-16",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-16/filter-funds-post-2026-11-16.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-16/filter-funds-post-2026-11-16-cover.jpg",
-  "createdAt": "2026-11-16T11:51:16.736Z",
-  "followUpAt": "2026-11-16T23:51:16.736Z",
-  "lastAttemptAt": "2026-11-16T23:47:01.412Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-17",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-17/filter-funds-post-2026-11-17.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-17/filter-funds-post-2026-11-17-cover.jpg",
+  "createdAt": "2026-11-17T12:12:20.518Z",
+  "followUpAt": "2026-11-18T00:12:20.518Z"
 }
