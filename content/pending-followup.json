@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-18",
-  "quote": "A sound investing habit is not about predicting every turn; it's about staying true to a thoughtful plan.",
-  "youtubeTitle": "Stay True to Your Investing Plan | Filter Funds",
-  "youtubeDescription": "Markets can be unpredictable, but a thoughtful long-term plan can help keep your decisions grounded. Build habits you can sustain and stay focused on your financial goals. Learn more at www.filterfunds.com",
-  "instagramCaption": "You don’t need to predict every market turn to invest with intention. Build a thoughtful plan, follow it consistently, and keep your long-term goals in view.\n\nExplore more at www.filterfunds.com",
+  "date": "2026-11-19",
+  "quote": "Good financial habits turn clear priorities into choices you can repeat.",
+  "youtubeTitle": "Make Your Financial Priorities a Daily Habit",
+  "youtubeDescription": "A stronger financial future starts with clear priorities and everyday choices you can sustain. Keep your goals in view, build habits that fit your life, and give progress time to take shape.\n\nExplore more at www.filterfunds.com",
+  "instagramCaption": "Clear priorities make better money habits easier to repeat. Keep your goals in view and build a routine that fits your life.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#InvestingMindset",
-    "#LongTermInvesting",
     "#FinancialDiscipline",
+    "#MoneyHabits",
+    "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#InvestWithPurpose"
+    "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-11-18",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-18/filter-funds-post-2026-11-18.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-18/filter-funds-post-2026-11-18-cover.jpg",
-  "createdAt": "2026-11-18T12:00:38.651Z",
-  "followUpAt": "2026-11-19T00:00:38.651Z",
-  "lastAttemptAt": "2026-11-18T22:38:51.460Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-19",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-19/filter-funds-post-2026-11-19.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-19/filter-funds-post-2026-11-19-cover.jpg",
+  "createdAt": "2026-11-19T11:57:40.497Z",
+  "followUpAt": "2026-11-19T23:57:40.497Z"
 }
