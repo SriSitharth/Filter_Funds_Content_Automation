@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-19",
-  "quote": "Good financial habits turn clear priorities into choices you can repeat.",
-  "youtubeTitle": "Make Your Financial Priorities a Daily Habit",
-  "youtubeDescription": "A stronger financial future starts with clear priorities and everyday choices you can sustain. Keep your goals in view, build habits that fit your life, and give progress time to take shape.\n\nExplore more at www.filterfunds.com",
-  "instagramCaption": "Clear priorities make better money habits easier to repeat. Keep your goals in view and build a routine that fits your life.\n\nwww.filterfunds.com",
+  "date": "2026-11-20",
+  "quote": "A strong money habit makes your priorities visible in the choices you make each day.",
+  "youtubeTitle": "Let Your Daily Money Choices Reflect Your Priorities | Filter Funds",
+  "youtubeDescription": "Building financial discipline starts with noticing where your money goes and choosing habits that support what matters most. Keep your approach thoughtful, consistent, and aligned with your long-term goals.\n\nLearn more at www.filterfunds.com",
+  "instagramCaption": "Your priorities show up in the small choices you make with money. Build habits that support the future you want—one thoughtful decision at a time.\n\nExplore more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
     "#FinancialDiscipline",
     "#MoneyHabits",
-    "#LongTermInvesting",
-    "#WealthBuilding",
     "#PersonalFinance",
-    "#InvestingMindset"
+    "#InvestingMindset",
+    "#LongTermInvesting",
+    "#WealthBuilding"
   ],
-  "releaseTag": "post-2026-11-19",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-19/filter-funds-post-2026-11-19.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-19/filter-funds-post-2026-11-19-cover.jpg",
-  "createdAt": "2026-11-19T11:57:40.497Z",
-  "followUpAt": "2026-11-19T23:57:40.497Z",
-  "lastAttemptAt": "2026-11-19T22:42:35.916Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-20",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-20/filter-funds-post-2026-11-20.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-20/filter-funds-post-2026-11-20-cover.jpg",
+  "createdAt": "2026-11-20T11:58:54.523Z",
+  "followUpAt": "2026-11-20T23:58:54.523Z"
 }
