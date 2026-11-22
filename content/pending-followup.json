@@ -1,25 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-21",
-  "quote": "A meaningful financial goal becomes more achievable when your everyday choices begin to reflect it.",
-  "youtubeTitle": "Let Everyday Choices Reflect Your Financial Goals | Filter Funds",
-  "youtubeDescription": "Your financial goals are shaped by the choices you make each day. Build habits that reflect what matters to you, and keep your long-term priorities in view. Learn more at www.filterfunds.com",
-  "instagramCaption": "Let your everyday money choices reflect the future you’re working toward. Small, intentional habits can keep meaningful goals in view. Explore more at www.filterfunds.com",
+  "date": "2026-11-22",
+  "quote": "Give your long-term goals a place in today's decisions, and let steady habits carry them forward.",
+  "youtubeTitle": "Let Steady Money Habits Carry Your Goals Forward",
+  "youtubeDescription": "Long-term progress often starts with the choices you make today. Build financial habits that keep your goals in view and are practical enough to sustain. Learn more at www.filterfunds.com",
+  "instagramCaption": "Your goals don’t need grand gestures—just thoughtful choices you can keep making. Give your future a place in today’s decisions. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#FinancialGoals",
-    "#MoneyHabits",
     "#FinancialDiscipline",
     "#LongTermInvesting",
     "#WealthBuilding",
     "#PersonalFinance",
-    "#InvestingMindset"
+    "#InvestingMindset",
+    "#MoneyHabits"
   ],
-  "releaseTag": "post-2026-11-21",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-21/filter-funds-post-2026-11-21.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-21/filter-funds-post-2026-11-21-cover.jpg",
-  "createdAt": "2026-11-21T11:31:00.386Z",
-  "followUpAt": "2026-11-21T23:31:00.386Z",
-  "lastAttemptAt": "2026-11-21T20:58:07.106Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-22",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-22/filter-funds-post-2026-11-22.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-22/filter-funds-post-2026-11-22-cover.jpg",
+  "createdAt": "2026-11-22T11:46:05.944Z",
+  "followUpAt": "2026-11-22T23:46:05.944Z"
 }
