@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-23",
-  "quote": "A thoughtful financial life is built by protecting your priorities from the pull of convenience.",
-  "youtubeTitle": "Protect Your Priorities | A Mindful Money Habit",
-  "youtubeDescription": "Small choices can shape a more intentional relationship with money. Keep your priorities in view, spend with purpose, and make room for the goals that matter to you.\n\nExplore more at www.filterfunds.com",
-  "instagramCaption": "Convenience can make spending easy. A moment of reflection can help keep your priorities in focus. Choose with intention, and let your money habits support the life you’re building.\n\nwww.filterfunds.com",
+  "date": "2026-11-24",
+  "quote": "Let patience shape your investing decisions, and let your plan—not passing moods—set the pace.",
+  "youtubeTitle": "Invest With Patience, Not Passing Moods | Filter Funds",
+  "youtubeDescription": "A thoughtful investing plan is easier to follow when patience sets the pace. Keep your long-term goals in view and build habits that suit your financial journey. Learn more at www.filterfunds.com",
+  "instagramCaption": "Let patience guide your investing decisions. A steady, thoughtful plan can help keep your long-term goals in focus—even when your mood shifts. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#PersonalFinance",
+    "#InvestingMindset",
+    "#LongTermInvesting",
     "#FinancialDiscipline",
-    "#MindfulMoney",
-    "#MoneyHabits",
+    "#PersonalFinance",
     "#WealthBuilding",
-    "#InvestingMindset"
+    "#InvestWithPurpose"
   ],
-  "releaseTag": "post-2026-11-23",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-23/filter-funds-post-2026-11-23.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-23/filter-funds-post-2026-11-23-cover.jpg",
-  "createdAt": "2026-11-23T13:22:48.167Z",
-  "followUpAt": "2026-11-24T01:22:48.167Z",
-  "lastAttemptAt": "2026-11-24T02:26:38.575Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-24",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-24/filter-funds-post-2026-11-24.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-24/filter-funds-post-2026-11-24-cover.jpg",
+  "createdAt": "2026-11-24T14:05:02.264Z",
+  "followUpAt": "2026-11-25T02:05:02.264Z"
 }
