@@ -1,25 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-26",
-  "quote": "A financial check-in turns scattered choices into a clearer path forward.",
-  "youtubeTitle": "A Simple Financial Check-In Can Clarify Your Next Step",
-  "youtubeDescription": "Take a moment to review your spending, savings, and goals. Small, thoughtful adjustments can help keep your financial habits aligned with what matters to you. Learn more at www.filterfunds.com",
-  "instagramCaption": "Pause, review, and reset. A simple financial check-in can help bring your everyday choices back in line with your goals. Visit www.filterfunds.com",
+  "date": "2026-11-27",
+  "quote": "A thoughtful investor measures progress by the discipline of the process, not the drama of the market.",
+  "youtubeTitle": "Let Discipline, Not Market Drama, Guide Your Investing",
+  "youtubeDescription": "Investing is a long-term practice. Keep your attention on thoughtful decisions and habits you can sustain through changing markets. Learn more at www.filterfunds.com",
+  "instagramCaption": "Market noise comes and goes. A thoughtful process helps keep your long-term goals in view. Learn more at www.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#PersonalFinance",
-    "#MoneyHabits",
-    "#FinancialDiscipline",
-    "#FinancialGoals",
     "#InvestingMindset",
-    "#BuildWealth",
-    "#SIPDiscipline"
+    "#LongTermInvesting",
+    "#FinancialDiscipline",
+    "#WealthBuilding",
+    "#PersonalFinance",
+    "#InvestingJourney"
   ],
-  "releaseTag": "post-2026-11-26",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-26/filter-funds-post-2026-11-26.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-26/filter-funds-post-2026-11-26-cover.jpg",
-  "createdAt": "2026-11-26T12:57:54.947Z",
-  "followUpAt": "2026-11-27T00:57:54.947Z",
-  "lastAttemptAt": "2026-11-26T23:55:46.839Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-27",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-27/filter-funds-post-2026-11-27.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-27/filter-funds-post-2026-11-27-cover.jpg",
+  "createdAt": "2026-11-27T12:53:38.413Z",
+  "followUpAt": "2026-11-28T00:53:38.413Z"
 }
