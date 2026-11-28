@@ -1,24 +1,22 @@
 {
   "status": "pending",
-  "date": "2026-11-27",
-  "quote": "A thoughtful investor measures progress by the discipline of the process, not the drama of the market.",
-  "youtubeTitle": "Let Discipline, Not Market Drama, Guide Your Investing",
-  "youtubeDescription": "Investing is a long-term practice. Keep your attention on thoughtful decisions and habits you can sustain through changing markets. Learn more at www.filterfunds.com",
-  "instagramCaption": "Market noise comes and goes. A thoughtful process helps keep your long-term goals in view. Learn more at www.filterfunds.com",
+  "date": "2026-11-28",
+  "quote": "Build a stronger financial future by making room for your goals before the month begins.",
+  "youtubeTitle": "Make Room for Your Financial Goals | Filter Funds",
+  "youtubeDescription": "A stronger financial routine starts with giving your priorities a place in your monthly plan. Make room for your goals, keep your choices intentional, and build progress one month at a time.\n\nLearn more at www.filterfunds.com",
+  "instagramCaption": "Give your financial goals a place in the plan before the month gets busy. A little intention can help your priorities stay visible in everyday choices.\n\nwww.filterfunds.com",
   "hashtags": [
     "#FilterFunds",
-    "#InvestingMindset",
-    "#LongTermInvesting",
     "#FinancialDiscipline",
-    "#WealthBuilding",
+    "#MoneyHabits",
     "#PersonalFinance",
-    "#InvestingJourney"
+    "#LongTermInvesting",
+    "#WealthBuilding",
+    "#InvestingMindset"
   ],
-  "releaseTag": "post-2026-11-27",
-  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-27/filter-funds-post-2026-11-27.mp4",
-  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-27/filter-funds-post-2026-11-27-cover.jpg",
-  "createdAt": "2026-11-27T12:53:38.413Z",
-  "followUpAt": "2026-11-28T00:53:38.413Z",
-  "lastAttemptAt": "2026-11-27T23:37:14.299Z",
-  "lastError": "publish-youtube-followup: invalid_grant"
+  "releaseTag": "post-2026-11-28",
+  "videoUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-28/filter-funds-post-2026-11-28.mp4",
+  "coverUrl": "https://github.com/SriSitharth/Filter_Funds_Content_Automation/releases/download/post-2026-11-28/filter-funds-post-2026-11-28-cover.jpg",
+  "createdAt": "2026-11-28T12:04:56.958Z",
+  "followUpAt": "2026-11-29T00:04:56.958Z"
 }
